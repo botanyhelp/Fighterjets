@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".Figherjets" >
+
+            <TextView
+                android:id="@+id/txt_Fighterjetname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/figherjetname" />
+
+            <TextView
+                android:id="@+id/txt_Figherjetsdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="@string/figherjetsdata" />
+            <EditText
+                android:id="@+id/txt_info"
+                android:hint="comma separated list of search terms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickInfo"
+                android:text="@string/info" />
+            <ImageView
+                android:id="@+id/imagedetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/fighterjets"
+                android:scaleType="fitCenter"
+                android:src="@drawable/f22_240"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_Name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickFighter"
+                android:text="@string/namebutton" />
+
+            <Button
+                android:id="@+id/btn_Thousand"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickThousand"
+                android:text="@string/thousandbutton" />
+            
+            <Button
+                android:id="@+id/btn_Status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickStatus"
+                android:text="@string/statusbutton" />
+            
+            <Button
+                android:id="@+id/btn_Country"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickCountry"
+                android:text="@string/countrybutton" />
+            <TextView
+                android:id="@+id/txt_Firstflight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="@string/firstflight" />
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+                <TableRow>             
+                <Button
+                android:id="@+id/btn_Year"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickYear"
+                android:text="@string/yearbutton" />
+                <Button
+                android:id="@+id/btn_Yearnineties"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickYearnineties"
+                android:text="@string/yearninetiesbutton" />
+                <Button
+                android:id="@+id/btn_Yeareighties"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickYeareighties"
+                android:text="@string/yeareightiesbutton" />
+                <Button
+                android:id="@+id/btn_Yearseventies"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickYearseventies"
+                android:text="@string/yearseventiesbutton" />
+                </TableRow>  
+                <TableRow>             
+                <Button
+                android:id="@+id/btn_Yearsixties"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickYearsixties"
+                android:text="@string/yearsixtiesbutton" />
+                <Button
+                android:id="@+id/btn_Yearfifties"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickYearfifties"
+                android:text="@string/yearfiftiesbutton" />
+                <Button
+                android:id="@+id/btn_Yearforties"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickYearforties"
+                android:text="@string/yearfortiesbutton" />
+                <Button
+                android:id="@+id/btn_Yearthirties"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickYearthirties"
+                android:text="@string/yearthirtiesbutton" />
+                </TableRow>                  
+                <TableRow>             
+                <Button
+                android:id="@+id/btn_Yeartwenties"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickYeartwenties"
+                android:text="@string/yeartwentiesbutton" />
+                <Button
+                android:id="@+id/btn_Yeareighteentonineteen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickYeareighteentonineteen"
+                android:text="@string/yeareighteentonineteenbutton" />
+                <Button
+                android:id="@+id/btn_Yearfourteentoseventeen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickYearfourteentoseventeen"
+                android:text="@string/yearfourteentoseventeenbutton" />
+                <Button
+                android:id="@+id/btn_Yearthirteen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickYearthirteen"
+                android:text="@string/yearthirteenbutton" />
+                </TableRow>           
+            </TableLayout>            
+            <Button
+                android:id="@+id/btn_Pictures"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickPictures"
+                android:text="@string/pictures" />
+            <Button
+                android:id="@+id/btn_Help"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickHelp"
+                android:text="@string/helpbutton" />
+
+
+                
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
