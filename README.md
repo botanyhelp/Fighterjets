@@ -2,6 +2,8 @@
 
 Code for Fighterjets android application.  
 
+Fighterjets contains facts and history of hundreds of fighter aircraft.  There is a page for every fighter, dozens of images and a searchable database.  Thanks to fighter aircraft mechanics, engineers, pilots, scientists, wikipedia editors and fighter enthusiasts everywhere.
+
 The sqlite database in the middle of this application houses all of the data.  It has a schema and was created like this:
 ```{sql}
 CREATE TABLE fighter (name text default null, country text default null, firstyear text default null, number text default null, status text default null, info text default null);
